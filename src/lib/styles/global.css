@@ -1,0 +1,45 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	margin: var(--spacing-0);
+	min-height: 100vh;
+	font-family: var(--font-family-body);
+	background: var(--colour-theme);
+	color: var(--colour-light);
+	place-content: center;
+}
+
+h1 {
+	font-size: var(--font-size-7);
+}
+
+h2 {
+	font-size: var(--font-size-4);
+}
+p {
+	font-size: var(--font-size-5);
+}
+
+:root {
+	/* font sizes */
+	--font-size-4: 1.424rem;
+	--font-size-5: 2.441rem;
+	--font-size-7: 3.815rem;
+
+	/* font weights */
+	--font-weight-bold: bold;
+
+	/* font families */
+	--font-family-body: Figtree;
+
+	--colour-dark: hsl(0deg 0% 4%); /* cod grey */
+	--colour-light: hsl(0deg 0% 100%); /* white */
+	--colour-theme: hsl(132deg 52% 32%); /* sea green */
+	--colour-alt: hsl(217deg 100% 56%); /* concord */
+	--colour-brand: hsl(217deg 57% 42%); /* sirocco */
+}
