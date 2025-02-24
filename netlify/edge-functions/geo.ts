@@ -7,8 +7,8 @@ export default async (_request: Request, context: Context) => {
 		ip,
 		geo: {
 			city,
-			country: { name: country }
-		}
+			country: { name: country },
+		},
 	} = context;
 
 	return Response.json({ ip, city, country });
